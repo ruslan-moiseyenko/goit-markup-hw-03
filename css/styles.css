@@ -88,32 +88,11 @@ a {
     display: block;
 }
 
-
-/* --------------header settings------------- */
-
-header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
-header a {
-    text-decoration: none;
-}
-
-nav a {
-    color: var(--title-text-color);
-}
-
 /* determin accent color */
 
-.accent {
+/* .accent {
     color: var(--accent-color);
-}
-
-
+} */
 
 /* ----------------Visually Hidden block--------------------------- */
 .visually-hidden {
@@ -129,11 +108,34 @@ nav a {
     margin: -1px;
 }
 
+/* --------------header settings------------- */
 
-/* -----------------header settings------------------------ */
-.container.header {
+header {
     padding-top: 24px;
     padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+
+header a {
+    text-decoration: none;
+
+}
+
+.link {
+    color: var(--title-text-color);
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+
+.container.header {
     display: flex;
     align-items: center;
 }
@@ -229,6 +231,10 @@ nav a {
     font-weight: 400;
 }
 
+.advantages.section {
+    padding-bottom: 0;
+}
+
 .advantages h3 {
     font-size: 14px;
     line-height: 1.14;
@@ -286,16 +292,17 @@ nav a {
     margin-left: 30px;
 }
 
+.our-team .fio {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
 .our-team h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     margin-bottom: 50px;
-}
-
-.our-team .img {
-    margin-bottom: 30px;
 }
 
 .our-team h3 {
@@ -311,10 +318,9 @@ nav a {
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
-    margin-bottom: 30px;
 }
 
-.our-team li {
+.our-team .item {
     background-color: var(--main-white-color);
 }
 
@@ -322,11 +328,11 @@ nav a {
 
 footer {
     background-color: var(--footer-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .container.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
     text-align: left;
 
 }
@@ -338,21 +344,25 @@ footer {
 
 .address {
     font-style: inherit;
+    width: 231px;
 }
 
 .address p {
+    color: var(--main-white-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--main-white-color)
+    margin-bottom: 9px;
 }
 
 .address a {
+    display: inline-block;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+    margin-bottom: 9px;
 }
 
 
@@ -362,7 +372,7 @@ footer {
 
 /* ------------------filter BUTTONS---------- */
 .filter.list {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .btn-filter {
@@ -388,6 +398,10 @@ footer {
     border: 1px solid var(--accent-color);
 }
 
+.job-examples.section {
+    border-top: 1px solid #ECECEC;
+}
+
 .job-examples .filter {
     display: flex;
     justify-content: center;
@@ -407,7 +421,6 @@ footer {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
-    margin-bottom: 20px;
 }
 
 .job-examples h2 {
@@ -416,8 +429,15 @@ footer {
     margin-bottom: 4px;
 }
 
-.job-examples .img {
-    margin-bottom: 20px;
+.job-examples .shortdescription {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .job-examples .gallery {
